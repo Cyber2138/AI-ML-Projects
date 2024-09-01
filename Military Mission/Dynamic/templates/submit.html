@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Defense Mission</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free HTML5 Website Template by freshdesignweb.com" />
+    <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+    <meta name="author" content="freshdesignweb.com" />
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="/static/css/animate.css">
+    <link rel="stylesheet" href="/static/css/icomoon.css">
+    <link rel="stylesheet" href="/static/css/themify-icons.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/magnific-popup.css">
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/static/css/flexslider.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+
+    <!-- JavaScript Files -->
+    <script src="/static/js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="/static/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="page">
+        <nav class="ubea-nav" role="navigation">
+            <div class="ubea-container">
+                <div class="row">
+                    <div class="col-sm-2 col-xs-12">
+                        <div id="ubea-logo"><a href="/">defense_mission<em>.</em></a></div>
+                    </div>
+                    <div class="col-xs-10 text-right menu-1 main-nav">
+                        <ul>
+                            <li class="active"><a href="/" data-nav-section="home">Home</a></li>
+                            <li><a href="/form" target="_blank" class="external">Get Started</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background-image: url('https://wallpapers.com/images/featured/army-background-4rymc3g13rmuy918.jpg');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                color: #fff;
+            }
+
+            .container {
+                max-width: 800px;
+                width: 100%;
+                padding: 30px;
+                background: rgba(255, 254, 254, 0.644); /* Dark semi-transparent background */
+                border-radius: 15px;
+                box-shadow: 0 4px 8px rgba(233, 230, 230, 0.3);
+                text-align: center; /* Center text inside the container */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .header h1 {
+                color: #007bff;
+                font-size: 2em;
+                margin: 0 0 20px 0;
+            }
+
+            .result h2 {
+                font-size: 1.5em;
+                color: #444;
+                margin-bottom: 20px;
+            }
+
+            .result .value {
+                font-size: 3em;
+                color: #007bff;
+                font-weight: bold;
+                background: #eff1f2;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                display: inline-block;
+            }
+
+            .footer a {
+                color: #007bff;
+                text-decoration: none;
+                font-size: 1em;
+                margin-top: 30px;
+                display: inline-block;
+            }
+
+            .footer a:hover {
+                text-decoration: underline;
+            }
+
+            @media (max-width: 600px) {
+                .container {
+                    padding: 10px;
+                }
+
+                .result h2 {
+                    font-size: 1.2em;
+                }
+
+                .result .value {
+                    font-size: 1em;
+                }
+            }
+        </style>
+
+        <div class="container">
+            <div class="result">
+                <div class="value">
+                    {{ prediction_value }}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
