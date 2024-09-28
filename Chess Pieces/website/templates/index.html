@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Chess</title>
+    <link rel="stylesheet" href="/static/fontawesome-5.5/css/all.min.css" />
+    <link rel="stylesheet" href="/static/slick/slick.css">
+    <link rel="stylesheet" href="/static/slick/slick-theme.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/css/templatemo-style.css" />
+    <style>
+        #introduction {
+            position: relative;
+            padding: 100px 10px;
+            text-align: center;
+        }
+        
+    html, body {
+        height: 100%;
+        margin:0;
+    }
+    
+    .tm-parallax-2 {
+        background-image: none;
+        background-size: initial;
+        background-position:initial;
+        background-attachment: initial;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .tm-button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        width: 100vw;
+        margin: 0;
+        padding: 20px;
+        position: relative;
+        color: rgb(238, 21, 21);
+    }
+    
+    .tm-btn-primary {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .tm-btn-primary:hover {
+        background-color: #0056b3;
+    }
+    
+    #contact {
+        position: relative;
+        height: 100vh;
+        background-image: url('../static/pexels-pixabay-277092.jpg');
+        background-size: cover;
+        background-position: center center;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .contact-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        filter: blur(8px);
+        z-index: 1;
+    }
+    
+    .contact-content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .contact-content-wrapper {
+        background: rgba(37, 36, 36, 0.7);
+        padding: 400px;
+        border-radius: 1px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        max-width: 1800px;
+        text-align: center;
+    }
+    
+    .contact-content h2 {
+        margin: 0 0 20px;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #fff;
+    }
+    
+    .contact-content p {
+        font-size: 1.25rem;
+        color: #fff;
+    }
+    
+    .responsive-img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .responsive-img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+    }
+    
+    #introduction {
+        transition: all 0.3s ease;
+    }
+    
+    /* Updated nav elements to black */
+    .navbar .nav-link {
+        color: black; /* Set nav elements to black */
+        font-weight: bold; /* Optional: make them bold */
+    }
+    
+    .navbar .nav-link:hover {
+        color: darkgray; /* Change color on hover to dark gray */
+    }
+    
+        </style>
+</head>
+<body>
+  <!-- hero section -->
+  <section id="hero" class="text-white tm-font-big tm-parallax" style="background-image: url('../static/pexels-vlada-karpovich-6114992.jpg'); background-position: center calc(25% + 120px); background-size: 98% auto;">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
+      <div class="container">   
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link tm-nav-link" href="#hero">Home</a></li>
+                  <li class="nav-item"><a class="nav-link tm-nav-link" href="#introduction">Introduction</a></li>
+                  <li class="nav-item"><a class="nav-link tm-nav-link" href="#contact">Contact Us</a></li>                    
+                  <li class="nav-item"><a class="nav-link tm-nav-link" href="/upload" target="_blank">Let's Go</a></li>
+              </ul>
+          </div>        
+      </div>
+  </nav>
+
+  <div class="text-center tm-hero-text-container">
+      <div class="tm-hero-text-container-inner">
+          <h2 class="tm-hero-title">The Chess</h2>
+          <p class="tm-hero-subtitle">Lets explore some predictions<br /> Lets Go</p>
+      </div>        
+  </div>
+
+  <div class="tm-next tm-intro-next">
+      <a href="#introduction" class="text-center tm-down-arrow-link">
+          <i class="fas fa-3x fa-caret-down tm-down-arrow"></i>
+      </a>
+  </div>      
+</section>
+
+<section id="introduction" class="tm-section-pad-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="../static/pexels-pixabay-260024.jpg" alt="Image" class="img-fluid tm-intro-img responsive-img" />
+        </div>
+        <div class="col-lg-6">
+          <div class="tm-intro-text-container">
+            <h2 class="tm-text-primary mb-4 tm-section-title">Introduction</h2>
+            <p class="mb-4 tm-intro-text">
+                Chess piece detection is crucial for automating game analysis and enhancing the chess experience. By using computer vision and artificial intelligence, systems can accurately recognize and classify each piece based on its unique shape and visual features. Advanced deep learning models, like Convolutional Neural Networks (CNNs), analyze images or video feeds of chess boards to identify pieces in real time, even under varied conditions. This technology not only improves strategic analysis and move tracking but also streamlines game recording, making it easier for players to review matches and enhance their skills, while providing a seamless blend of physical and digital chess play.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="tm-button-container">
+    <a class="tm-btn-primary" href="/upload" target="_blank">Let's Go</a>
+</div>
+<!-- Contact -->
+<section id="contact" class="tm-section-pad-top tm-parallax-2">
+  <div class="contact-background">
+      <div class="contact-overlay"></div>
+      <div class="contact-content">
+          <div class="contact-content-wrapper">
+              <h2 class="mb-4">Contact Us</h2>
+              <p>Thanks for visiting our website</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<script src="/static/js/jquery-1.9.1.min.js"></script>     
+<script src="/static/slick/slick.min.js"></script>
+<script src="/static/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script> 
+<script>
+    $(function(){
+        // Detect window scroll and update navbar
+        $(window).scroll(function() {          
+            if($(document).scrollTop() > 120) {
+                $('.tm-navbar').addClass("scroll");
+            } else {
+                $('.tm-navbar').removeClass("scroll");
+            }
+        });
+        
+        // Close mobile menu after click 
+        $('#tmNav a').on('click', function(){
+            $('.navbar-collapse').removeClass('show'); 
+        });
+
+        // Scroll to corresponding section with animation
+        $('#tmNav a').on('click', function(event){
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({scrollTop: $(hash).offset().top}, 400, function() {
+                  window.location.hash = hash;
+                });
+            }
+        });
+
+        // Pop up
+        $('.tm-gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery: { enabled: true }
+        });
+
+        // Gallery
+        $('.tm-gallery').slick({
+            dots: true,
+            infinite: false,
+            slidesToShow: 5,
+            slidesToScroll: 2,
+            responsive: [
+                {
+                    breakpoint: 1199,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+</body>
+</html>

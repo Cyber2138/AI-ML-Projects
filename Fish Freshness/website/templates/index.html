@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Fish</title>
+    <link rel="stylesheet" href="/static/fontawesome-5.5/css/all.min.css" />
+    <link rel="stylesheet" href="/static/slick/slick.css">
+    <link rel="stylesheet" href="/static/slick/slick-theme.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/css/templatemo-style.css" />
+    <style>
+    #introduction {
+        position: relative; /* Ensure child elements are positioned relative to this */
+        padding: 50px 20px; /* Adjust padding as needed */
+        text-align: center; /* Center text inside */
+    }
+    
+/* Adjust container and button styles */
+html, body {
+    height: 100%; /* Ensure html and body take full height */
+    margin: 0; /* Remove default margin */
+}
+
+.tm-parallax-2 {
+    background-image: none; /* Remove the background image */
+    background-size: initial; /* Reset background size */
+    background-position: initial; /* Reset background position */
+    background-attachment: initial; /* Reset background attachment */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.tm-button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 20vh; /* Adjust height to content */
+    width: 100vw; /* Full viewport width */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Adjust padding as needed to reduce gap */
+    position: relative; /* Ensure proper positioning */
+}
+
+.tm-btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff; /* Primary color for the button */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none; /* Remove underline for <a> tag */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tm-btn-primary:hover {
+    background-color: #0056b3; /* Darker color for hover effect */
+}
+
+
+/* Ensure full height and center the background image */
+#contact {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    background-image: url('/static/pexels-quang-nguyen-vinh-222549-2131828.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden; /* Ensure content does not overflow */
+    padding: 0; /* Remove any default padding */
+    margin: 0; /* Remove any default margin */
+}
+
+/* Overlay for the blurred effect */
+.contact-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
+    filter: blur(8px); /* Apply blur effect */
+    z-index: 1; /* Ensure overlay is above background image */
+}
+
+/* Content container for centering */
+.contact-content {
+    position: relative; /* Relative positioning to place content inside */
+    z-index: 2; /* Place content above overlay */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Full height of section */
+    width: 100%; /* Full width of section */
+}
+
+/* Box around content */
+.contact-content-wrapper {
+    background: rgba(37, 36, 36, 0.7); /* Dark background with opacity */
+    padding: 400px; /* Adjust padding as needed */
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow around the box */
+    width: 100%; /* Full width of container */
+    max-width: 1800px; /* Optional: Limit maximum width for readability */
+    text-align: center;
+}
+
+/* Styling for headings and paragraphs */
+.contact-content h2 {
+    margin: 0 0 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.contact-content p {
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+/* Shadow Effect for Image */
+.responsive-img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+    
+      /* Hover Effect for Image */
+      .responsive-img:hover {
+        transform: scale(1.05); /* Scale the image slightly */
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5); /* Intensify the shadow on hover */
+      }
+    
+      /* Optional: Add a smooth transition to the entire section */
+      #introduction {
+        transition: all 0.3s ease;
+      }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+  <!-- hero section -->
+  <section id="hero" class="text-white tm-font-big tm-parallax" style="background-image: url('/static/close-up-fish-swimming-underwater.jpg'); background-position: center calc(25% + 120px); background-size: 98% auto;">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
+      <div class="container">   
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link tm-nav-link" href="#hero">Home</a></li>
+                  <li class="nav-item"><a class="nav-link tm-nav-link" href="#introduction">Introduction</a></li>
+                  <li class="nav-item"><a class="nav-link tm-nav-link" href="#contact">Contact Us</a></li>                    
+                  <li class="nav-item"><a class="nav-link tm-nav-link" href="/upload" target="_blank">Let's Go</a></li>
+              </ul>
+          </div>        
+      </div>
+  </nav>
+
+  <div class="text-center tm-hero-text-container">
+      <div class="tm-hero-text-container-inner">
+          <h2 class="tm-hero-title">The Fish</h2>
+          <p class="tm-hero-subtitle">Lets explore some predictions<br /> Lets Go</p>
+      </div>        
+  </div>
+
+  <div class="tm-next tm-intro-next">
+      <a href="#introduction" class="text-center tm-down-arrow-link">
+          <i class="fas fa-3x fa-caret-down tm-down-arrow"></i>
+      </a>
+  </div>      
+</section>
+
+<section id="introduction" class="tm-section-pad-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="../static/pexels-irlando-979729.jpg" alt="Image" class="img-fluid tm-intro-img responsive-img" />
+        </div>
+        <div class="col-lg-6">
+          <div class="tm-intro-text-container">
+            <h2 class="tm-text-primary mb-4 tm-section-title">Introduction</h2>
+            <p class="mb-4 tm-intro-text">
+              Ensuring fish freshness is essential for quality and safety in the seafood industry, and the condition of a fish's eyes is a crucial indicator of freshness. Fresh fish have clear, bulging eyes, while deteriorating fish show signs such as cloudiness, sunken eyes, or a milky appearance. As fish age, their eyes become cloudy due to the breakdown of tissues and biochemical changes. Advances in technology now enable the use of computer vision and artificial intelligence to assess freshness by analyzing these visual cues. This approach enhances quality control and helps ensure that only the freshest fish reach consumers, thereby improving safety and reducing waste.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="tm-button-container">
+    <a class="tm-btn-primary" href="/upload" target="_blank">Let's Go</a>
+</div>
+<!-- Contact -->
+<section id="contact" class="tm-section-pad-top tm-parallax-2">
+  <div class="contact-background">
+      <div class="contact-overlay"></div>
+      <div class="contact-content">
+          <div class="contact-content-wrapper">
+              <h2 class="mb-4">Contact Us</h2>
+              <p>Thanks for visiting our website</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<script src="/static/js/jquery-1.9.1.min.js"></script>     
+<script src="/static/slick/slick.min.js"></script>
+<script src="/static/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script> 
+<script>
+    $(function(){
+        // Detect window scroll and update navbar
+        $(window).scroll(function() {          
+            if($(document).scrollTop() > 120) {
+                $('.tm-navbar').addClass("scroll");
+            } else {
+                $('.tm-navbar').removeClass("scroll");
+            }
+        });
+        
+        // Close mobile menu after click 
+        $('#tmNav a').on('click', function(){
+            $('.navbar-collapse').removeClass('show'); 
+        });
+
+        // Scroll to corresponding section with animation
+        $('#tmNav a').on('click', function(event){
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({scrollTop: $(hash).offset().top}, 400, function() {
+                  window.location.hash = hash;
+                });
+            }
+        });
+
+        // Pop up
+        $('.tm-gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery: { enabled: true }
+        });
+
+        // Gallery
+        $('.tm-gallery').slick({
+            dots: true,
+            infinite: false,
+            slidesToShow: 5,
+            slidesToScroll: 2,
+            responsive: [
+                {
+                    breakpoint: 1199,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+</body>
+</html>
